@@ -6,6 +6,11 @@ namespace try4
     {
         static void Main(string[] args)
         {
+            RiddlesGame();
+        }
+
+        static void RiddlesGame()
+        {
             string riddleMessage = "Who goes on morning on 4, on day on 2, on evening on 3";
             Riddle(riddleMessage, "human", 4);
 
@@ -28,7 +33,7 @@ namespace try4
                 
                 if (attemps == 0)
                 {
-                    isRight = "No more attempts, right answer was ";
+                    isRight = "No more attempts, right answer was";
                     break;
                 }
                 Console.WriteLine($"You have {attemps} attempts left");
